@@ -1,0 +1,165 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #fff;
+    background-color: #222;
+}
+
+/* Header */
+header {
+       background: linear-gradient(to right, #ff7e5f, #feb47b, #6a11cb);
+
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #927811;
+    font-weight: bold;
+}
+
+nav a {
+    color: #a62121;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #f9d342;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://picsum.photos/1920/1080') no-repeat center center/cover;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #f9d342;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: #f9d342;
+    color: #000;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #ffcc00;
+}
+
+/* About Section */
+.about, .services {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.about h2, .services h2 {
+    color: #f9d342;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    width: 70%;
+    margin: auto;
+}
+
+/* Services Section */
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #333;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.card h3 {
+    color: #f9d342;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+header .container nav ul {
+      list-style: none; /* Remove default list bullets */
+      padding: 0; /* Remove default padding */
+      margin: 0; /* Remove default margin */
+      display: flex; /* Arrange list items in a row */
+      gap: 20px; /* Add space between buttons */
+    }
+
+    header .container nav ul li a {
+        font-weight: bold;
+      text-decoration: none; /* Remove underline from links */
+      color: #f4eded; /* Set a default color */
+      padding: 10px 15px; /* Add padding for button-like appearance */
+      border: 5px solid #e0b509; /* Add a border */
+      border-radius: 33px; /* Round the corners */
+      transition: background-color 0.3s ease; /* Add a smooth transition for hover effect */
+    }
+
+    header .container nav ul li a:hover {
+      background-color: #f0f0f0; /* Change background on hover */
+    }
+    .logo img {
+    height: 40px;
+    width: auto;
+    display: block;
+}
+.logo {
+    width: 120px;       /* adjust width */
+    height: 40px;       /* adjust height */
+    background: url(logo.png) no-repeat center center;
+    background-size: contain; /* keeps the logo fully visible */
+}
+.logo {
+    width: 120px;
+    height: 50px;
+    background-image: url('logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+     transform: scale(2.5); /* 1.5 = 150% size */
+    transform-origin: left; /* scale from left */
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tempreture Converter Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="container">
+  <!-- Fire logo with transparent background -->
+  <img src="fire.png" alt="Fire Icon" class="logo">
+    <div class="container">
+    <h2>Temperature Converter</h2>
+    <form id="tempForm" onsubmit="event.preventDefault(); convertTemp();">
+      <label for="temperature">Enter Temperature:</label>
+      <input type="number" id="temperature" placeholder="e.g. 32" required>
+      
+      <label for="unit">Convert From:</label>
+      <select id="unit">
+        <option value="celsius">Celsius (°C)</option>
+        <option value="fahrenheit">Fahrenheit (°F)</option>
+        <option value="kelvin">Kelvin (K)</option>
+      </select>
+      
+      <label for="toUnit">Convert To:</label>
+      <select id="toUnit">
+        <option value="celsius">Celsius (°C)</option>
+        <option value="fahrenheit">Fahrenheit (°F)</option>
+        <option value="kelvin">Kelvin (K)</option>
+      </select>
+      
+      <button type="submit">Convert</button>
+      <div class="error" id="error"></div>
+    </form>
+    <div class="result" id="result"></div>
+  </div>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
